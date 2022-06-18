@@ -1,0 +1,8 @@
+
+
+how many color i can change 
+
+1. white -: color - text color / btn backgrond 
+2. reset and del button and -: = buttons 
+3. bg color -: i can change 
+2. cal bg -: color / 

@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+
+
+/* classes utility  */
+.flex{
+    display: flex;
+}
+
+:root{
+        /* theme 1 bg  */
+        --main-bg: hsl(222, 26%, 31%);
+        --cal-bg:hsl(223, 31%, 20%);
+        --scr-bg:hsl(224, 36%, 15%);
+    
+      /* theme 1 key  */
+      --key-bg:hsl(6, 63%, 50%);
+      --key-shadow: hsl(6, 70%, 34%);
+
+      --color-red: hsl(225, 21%, 49%) ;
+      --red-shadow: hsl(224, 28%, 35%);
+
+      --key-gybg : hsl(30, 25%, 89%);
+      --key-shadow: hsl(28, 16%, 65%) ;
+    
+      /* Text */
+      --darkgrayish-text: hsl(221, 14%, 31%);
+      --color-df: hsl(0, 0%, 97%);
+      --color-white: #fff;
+    
+}
+.theme1{
+        /* theme 1 bg  */
+        --main-bg: hsl(222, 26%, 31%);
+        --cal-bg:hsl(223, 31%, 20%);
+        --scr-bg:hsl(224, 36%, 15%);
+    
+      /* theme 1 key  */
+      --key-bg:hsl(6, 63%, 50%);
+      --key-shadow: hsl(6, 70%, 34%);
+
+      --color-red: hsl(225, 21%, 49%) ;
+      --red-shadow: hsl(224, 28%, 35%);
+
+      --key-gybg : hsl(30, 25%, 89%);
+      --key-shadow: hsl(28, 16%, 65%) ;
+    
+      /* Text */
+      --darkgrayish-text: hsl(221, 14%, 31%);
+      --color-df: hsl(0, 0%, 97%);
+      --color-white: #fff;
+    
+}
+
+
+.theme2{
+          /* theme 1 bg  */
+          --main-bg: hsl(0, 0%, 90%);
+          --cal-bg:hsl(0, 5%, 81%);
+          --scr-bg:  hsl(0, 0%, 93%);
+      
+        /* theme 1 key  */
+        --key-bg: hsl(25, 98%, 40%);
+        --key-bgshadow:  hsl(25, 99%, 27%);
+
+        --color-red: hsl(185, 42%, 37%);
+        --red-shadow:  hsl(185, 58%, 25%);
+        
+        --key-gybg : hsl(45, 7%, 89%);
+        --key-shadow:  hsl(35, 11%, 61%) ;
+      
+        /* Text */
+        --darkgrayish-text: hsl(60, 10%, 19%);
+        --color-df: hsl(60, 10%, 19%);
+        /* --color-white:hsl(0, 0, 100%); */
+        --color-white: #fff;
+}
+.theme3{
+          /* theme 1 bg  */
+          --main-bg: hsl(268, 75%, 9%);
+          --cal-bg:hsl(268, 71%, 12%);
+          --scr-bg:  hsl(0, 0%, 93%);
+      
+        /* theme 1 key  */
+        --key-bg: hsl(176, 100%, 44%);
+        --key-bgshadow:   hsl(177, 92%, 70%);
+
+        --color-red: hsl(281, 89%, 26%);
+        --red-shadow:  hsl(285, 91%, 52%);
+        
+        --key-gybg : hsl(268, 47%, 21%);
+        --key-shadow:  hsl(290, 70%, 36%) ;
+      
+        /* Text */
+        --darkgrayish-text:  hsl(52, 100%, 62%);
+        --color-df:  hsl(52, 100%, 62%);
+        /* --color-white:hsl(0, 0, 100%); */
+        --color-white: #fff;
+}
+
+
+
+
+
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--main-bg);
+    flex-direction: column;
+}
+.calInput{
+    width: 35vw;
+    color: var(--color-df);
+
+}
+.switcher{
+}
+.theme{
+    margin-bottom: 20px;
+
+}
+.theme h3{
+  /* margin-top: -10; */
+  padding-top: 20px;
+  font-size: 18px;
+}
+.switcher span{
+    margin-right: 20px;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding-top: 15px;
+}
+.sliderNumber p{
+    padding: 0px 7px;
+}
+.sliderInput{
+    background: var(--cal-bg);
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+.sliderInput  input{
+    cursor: pointer;
+}
+
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 25px;
+    top: -.5px;
+    left: -.5px;
+    position: relative;
+    background-color: var(--cal-bg);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    /* border: 2px solid white; */
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -.5px;
+    left: -.1px;
+    position: relative;
+    background-color: var(--key-bg);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    /* border: 2px solid white; */
+}
+.input input{
+    padding: 30px 10px;
+    font-size: 32px;
+    text-align: right;
+    background: var(--scr-bg);
+  color: var(--color-df) ;
+  border-radius: 8px;
+  border: none;
+}
+
+.input input:focus{
+    outline: none;
+}
+
+.keyboard{
+    width: 35vw;
+    padding: 10px;
+   margin-top: 30px;
+   background: var(--cal-bg);
+}
+
+
+.button{
+    padding: 3%;
+    margin: 3% 3%; 
+    width: 6vw;
+    height: 7vh;
+
+    cursor: pointer; 
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    box-shadow: 1px 4px 0px var(--key-shadow);
+    border: none;
+    background: var(--key-gybg);
+    color: var(--darkgrayish-text);
+}
+#dell{
+    font-size: 18px;
+}
+.btn .button{
+    width: 50%;
+    margin: 3% 3%; 
+    border-radius: 10px;
+    border: none;
+}
+
+.btn .button:first-child,#dell{
+background: var(--color-red);
+box-shadow: 1px 4px 0px var(--red-shadow);
+color: var(--color-white);
+
+}
+.btn .button:last-child{
+    box-shadow: 1px 4px 0px var(--key-bgshadow);
+    background: var(--key-bg);
+color: var(--color-white);
+
+}
+
+
+
+@media only screen and (max-width: 700px) {
+    .keyboard , .calInput{
+        width: 50%;
+    }
+    .button{
+        padding: 3%;
+        margin: 3% 3%; 
+        width: 8.5vw;
+        height: 8vh;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .keyboard , .calInput{
+        width: 70%;
+    }
+    .button{
+        padding: 5%;
+        margin: 4% 5%; 
+        width: 10vw;
+        height: 8vh;
+        border-radius: 3px;
+    }
+    .btn .button{
+        border-radius: 3px; 
+    }
+
+}
+
+
+
+
+
+
+/* 
+
+  .attribution { font-size: 11px; text-align: center; }
+  .attribution a { color: hsl(228, 45%, 44%); } */

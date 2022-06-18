@@ -1,0 +1,41 @@
+.flex{
+    display: flex;
+}
+
+.jcenter{
+    justify-content: center;
+}
+.between{
+    justify-content: space-between;
+}
+.around{
+    justify-content: space-around;
+}
+.align{
+    align-items: center;
+}
+.text-center{
+    text-align: center;
+
+}
+.text-left{
+text-align: left;
+}
+.text-right{
+text-align: right;
+}
+.list-none{
+    list-style: none;
+}
+.column{
+    flex-direction: column;
+}
+.w100{
+    width: 100%;
+}
+.w50{
+    width: 50%;
+}
+.pointer{
+    cursor: pointer;
+}
